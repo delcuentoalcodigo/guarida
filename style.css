@@ -1,0 +1,271 @@
+/* CSS files add styling rules to your content */
+:root {
+  --color-bg: #ff8000;
+  --color-text-main: #ff8000;
+  --color-primary: #ff8000;
+  --wrapper-height: 87vh;
+  --image-max-width: 300px;
+  --image-margin: 3rem;
+  --font-family: 'Play', sans-serif;
+  --font-family-header: 'Play', sans-serif;
+}
+
+Import fonts 
+@font-face {
+  font-family: Xhers Regular;
+  src: url("https://cdn.glitch.global/79d0dbe7-59f7-4454-bbed-58c136ee44f4/Xhers%20Regular.otf?v=1645541519323")
+    format("opentype");
+}
+@font-face {
+  font-family: Xhers Regular;
+  font-weight: bold;
+  src: url("https://cdn.glitch.global/8b7152b8-c49c-4319-b36a-cd03a4014887/Xhers%20Regular.otf?v=1643831221301")
+    format("opentype");
+}
+
+body {
+  font-family: 'Play', sans-serif;
+  background-color:#060606;
+margin:0;
+overflow-x:hidden;
+}
+
+h1 {
+  color: #aa09f0;
+  font-size: 40px;
+  justify-content:center;
+  display:flex;
+  align-items:center;
+}
+
+h2 {
+  color: #01e080;
+  font-size: 25px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin:100px;
+  margin-top: 0px;
+}
+
+h3 {
+  color: #ffffff;
+  font-size: 18px;
+  display:flex;
+  margin:45px;
+    justify-content:center;
+  align-items:center;
+  margin-top: -30px;
+}
+
+h4 {
+  color: #f009ab;
+  font-size: 30px;
+  display:flex;
+/*  justify-content:center;
+  align-items:right;*/
+  margin:9px;
+  margin-top:-1px;
+}
+
+h5 {
+  color: #7CFC00;
+  font-size: 35px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin:10px;
+}
+h6 {
+  color: #0bf35d;
+  font-size: 35px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin:10px;
+}
+h7 {
+  color: #02bfaa;
+  font-size: 26px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin:10px;
+}
+
+h8 {
+  color: #b2af05;
+  font-size: 30px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin:18px;
+}
+
+a{
+color: #aa09f9;
+  font-size: 26px;
+  text-decoration: none;
+}
+
+
+#myCanvas {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow-y: hidden;
+  position: fixed;
+  /* here is your hydra screenshot (for mobile) */
+    background-size: cover;
+}
+
+.centrado{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin:90px;
+}
+
+@media only screen and (max-width: 60%){
+.centrado{
+  justify-content:center;
+  align-items:left;
+  margin:0px;
+}  
+}
+@media only screen and (max-width: 100%){
+ {
+  color: #ff8000;
+  font-size: 8px;
+   height: auto;
+} 
+}
+@media only screen and (max-width: 80%){
+h1, {
+  color: #ffe158;
+  font-size: 10px;
+} 
+}
+@media only screen and (max-width: 100%){
+h2, {
+  color: #ffe158;
+  font-size: 25px;
+  margin:40px 0 0 0;
+} 
+}
+
+@media only screen and (max-width: 80%){
+h3, {
+  color: #ffe158;
+  font-size: 25px;
+  margin:40px 0 0 0;
+} 
+}
+
+img{
+  width: 530px;
+  height: 600px;
+  position: center;
+  margin-top: 11px;
+  margin-left: 10px;
+  justify-content:center;
+}
+
+header {
+  background: rgba(0,0,0,0);
+  font-family: 'Play', sans-serif;
+  width: 100%;
+  margin-top:-10px;
+  position: fixed;
+  z-index: 100;
+}
+
+nav {
+  float: left;
+}
+
+nav ul {
+  list-style: none;
+  overflow: hidden;
+}
+
+nav ul li {
+  float: left;
+  font-family: 'Play', sans-serif;
+  font-size: 30px;
+}
+nav ul li a {
+  display: block;
+  padding: 10px;
+  color: #000000;
+  transition:0s;
+}
+nav ul li:hover {
+  background: #aa09f0;}
+
+.title {
+  color: #e403be;
+  font-family: 'Play', sans-serif;
+  font-style: normal;
+  font-size: 50px;
+  line-height: 105%;
+  margin: 0;
+}
+
+.footer{
+background:rgba(0,0,0,0);
+padding:10px 0px;
+font-family: 'Play', sans-serif;
+text-align:center;
+}
+
+.footer .row{
+width:100%;
+margin:0.5% 0%;
+padding:0.6% 0%;
+color:gray;
+font-size:0.8em;
+}
+
+.footer .row a{
+text-decoration:none;
+color:gray;
+transition:0.5s;
+}
+
+.footer .row a:hover{
+color:#ffffff;
+}
+
+.footer .row ul{
+width:100%;
+}
+
+.footer .row ul li{
+display:inline-block;
+margin:0px 30px;
+}
+
+.footer .row a i{
+font-size:1.5em;
+margin:0% 1%;
+}
+
+@media (max-width:720px){
+.footer{
+text-align:left;
+  
+padding:6%;
+}
+.footer .row ul li{
+display:block;
+margin:10px 0px;
+text-align:left;
+}
+.footer .row a i{
+margin:0% 3%;
+}
+}

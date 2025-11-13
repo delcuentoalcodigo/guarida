@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Talleres</title>
+    <link rel="stylesheet" href="/style.css">
+     <script src="https://unpkg.com/hydra-synth"></script>
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--GOOGLE FONTS-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+  </head>  
+  <body>
+   <header>
+    <nav>
+    <ul>
+		<li><a href="https://mikicorfiel.glitch.me/#">Miki Corfiel</a></li>
+		<li><a href="biografia.html">Bio</a></li>
+		<li><a href="https://mikicorfiel.glitch.me/obra.html">Obra</a></li>
+		<li><a href="talleres.html">Talleres</a></li>
+		 </ul>
+    </nav>
+</header>
+      <br>
+   <!--<div class="centrado">
+       <img src="https://cdn.glitch.global/80c4c833-c22d-4956-8e4b-01b5eb43f75a/bloggif_6376756d88da0.gif?v=1668707715097"
+          alt=""/></div>-->
+     <br><br><br>
+     <h1>
+       Taller práctico de programación creativa en Hydra
+     </h1>
+<h2><br>
+  "Del cuento al código" es un camino posible, una puerta de entrada a la programación creativa y al live coding, a partir de la escritura.
+<br>¿Cómo darle movimiento al texto? ¿Cómo salir de la hoja, de lo fijo, de lo inmutable?
+<br>Hydra es el puente.
+<br><br>Hydra es un software de código abierto, basado en una plataforma web, pensada originalmente para prácticas artísticas de codificación de imágenes y videos en vivo (live coding).
+<br>Su creadora es Olivia Jack, programadora y artista digital estadounidense.
+<br><br>Dentro de Hydra, exploraremos la acción de escribir en sí misma.
+<br>Poniendo en juego tres lenguajes: el visual, el poético y el de programación.
+<br>
+    </h2>
+   <div class="centrado">
+       <img src="https://cdn.glitch.me/80c4c833-c22d-4956-8e4b-01b5eb43f75a/mi%C3%A9rcoles-y-jueves.gif?v=1686156127937"
+          alt=""/></div>
+     <br>
+    <h2>
+      A lo largo de los encuentros trabajaremos en el desarrollo de un código personal que se irá enriqueciendo a medida que se incorporen nuevas funciones.
+<br><br>Compartiremos permanentemente los avances y las posibilidades de experimentación dentro de la plataforma.
+<br><br>
+Objetivos del taller:
+<br>
++ Conocer las funciones generales de Hydra: generadoras, de geometría, de color, modos de fusión y moduladoras, incorporación de cámara, video e imágenes.<br>
++ Experimentar las posibilidades de escritura dentro de la plataforma.<br>
+      + Reflexionar sobre la práctica del live coding.
+      <br>
++ Crear un poema visual.
+
+<br><br>
+Destinatarixs:<br>
+
+      *Todas las personas interesadas en desarrollar proyectos con Hydra, curiosxs, activistas, artivistas, artistas visuales, escritorxs, vjs e interesadxs en literatura digital.
+<br><br>
+      *Cupo máximo por grupo: 7 personas, prioridad mostri disidencias/ disidencias sexogenéricas.
+    <br><br>
+      *No se requieren ni se asumen conocimientos previos.
+<h1>
+ <a href="https://forms.gle/QMHb4s74whAJ4R469">+ información e inscripciones</a>
+ </h1>
+    </h2>
+   
+<canvas id="myCanvas" width="400px" height="400px"></canvas>
+    <script>
+        var hydra = new Hydra({
+        canvas: document.getElementById("myCanvas")
+      })
+solid(0,0,0)
+.diff(osc(3,0.3,4))
+.mask(shape(2,0.01).scrollY(0.1,-0.1).rotate(-0.01,0.01))
+.modulateScale(noise(1),0.7)
+.out()
+    </script>
+    <footer>
+<div class="footer">
+<div class="row">
+<a href="https://www.facebook.com/mariamicaela.corfielrecalde/"><i class="fa fa-facebook"></i></a>
+<a href="https://www.instagram.com/mikicorfiel/"><i class="fa fa-instagram"></i></a>
+<a href="https://www.youtube.com/channel/UCrWqiHpPwi1HF-U5XOJECzw/videos"><i class="fa fa-youtube"></i></a>
+<a href="https://twitter.com/MikiCorfiel"><i class="fa fa-twitter"></i></a>
+</div>
+</div>
+</footer>
+    </body>
+    </html>

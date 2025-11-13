@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Obra</title>
+    <link rel="stylesheet" href="/style.css">
+     <script src="https://unpkg.com/hydra-synth"></script>
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--GOOGLE FONTS-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
+  </head>  
+  <body>
+   <header>
+    <nav>
+    <ul>
+		<li><a href="https://mikicorfiel.glitch.me/#">Miki Corfiel</a></li>
+		<li><a href="biografia.html">Bio</a></li>
+		<li><a href="https://mikicorfiel.glitch.me/obra.html">Obra</a></li>
+		<li><a href="talleres.html">Talleres</a></li>
+     </ul>
+    </nav>
+</header>
+     
+    <h2><br><br>
+      <br><br>Mayo a Agosto 2023 - Ediciones Performáticas: Presentación de la reedición del libro "Un elefante ocupa mucho espacio" de Elsa Bornemann. 
+  <br><br>Abril a Mayo 2023 - Del cuento al código taller práctico de programación creativa en Hydra en Biblioteca Popular Oesterheld.
+  <br><br>Abril 2023 - Video 15 años de Arte al Ataque
+  <br><br>Marzo 2023 - Presentación del libro Carne de Tamara Rutinelli en Comisión Provincial por la Memoria.
+  <br><br>Enero 2023 - Intervención en Festival Cultural organizado por Arte al Ataque: En defensa de nuestros territorios, en el Camping Huenuy Hue Mew de la comunidad mapuche en Lago Correntoso, Villa La Angostura.
+      <br>
+      <br>Noviembre 2022 - Performance: "¿En qué estás pensando ahora?" en Metaverse Music Festival; Decentraland Foudation / Spam Arts.
+      <br>
+      <br>Junio a Noviembre 2022 - Performances de Live coding en Percunoches Manijas: Ensamble de percusión e improvisación con lenguaje de señas.
+<br>
+<br>Mayo 2022 - Conversatorio "Del cuento al código" en Conurbeat, Festival Conurbano de Arte Electrónico 
+      <br>
+      <br>Noviembre 2021 - Performance: "Memoria y Futuro" junto a Torotumbo en Festival Aura de Artes Escénicas, 6ta edición. Barrio Meridiano V.
+ <br>
+      <br>Septiembre a Noviembre 2021 - Producción del evento y performance audiovisual: "Tengo que decirte algo" junto a Torotumbo en la 1° edición del Festival Conurbeat de Arte Electrónico y Digital en La Plata. 
+<br>
+      <br>Junio a Agosto 2021 - Publicación del fanzine "¿Somos?" autoeditado en la 3ra edición del Laboratorio Línea de Fuga, coordinado por Julieta Marra.
+    <br>
+      <br>Octubre 2020 - Publicación del poemario "Crisálida", Vuelo de Quimera Editoras. Prólogo Eugenia Straccali, Contratapa Evangelina Caro Betelú, Reseña Luisina Milone.
+    </h2>
+       
+<canvas id="myCanvas" width="400px" height="400px"></canvas>
+    <script>
+        var hydra = new Hydra({
+        canvas: document.getElementById("myCanvas")
+      })
+solid(0,0,0)
+.diff(osc(3,0.3,4))
+.mask(shape(2,0.01).scrollY(0.1,-0.1).rotate(-0.01,0.01))
+.modulateScale(noise(1),0.7)
+.out()
+    </script>
+    <footer>
+<div class="footer">
+<div class="row">
+<a href="https://www.facebook.com/mariamicaela.corfielrecalde/"><i class="fa fa-facebook"></i></a>
+<a href="https://www.instagram.com/mikicorfiel/"><i class="fa fa-instagram"></i></a>
+<a href="https://www.youtube.com/channel/UCrWqiHpPwi1HF-U5XOJECzw/videos"><i class="fa fa-youtube"></i></a>
+<a href="https://twitter.com/MikiCorfiel"><i class="fa fa-twitter"></i></a>
+</div>
+</div>
+</footer>
+    </body>
+    </html>
